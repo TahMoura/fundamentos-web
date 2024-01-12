@@ -7,31 +7,72 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+    
     <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
 
-    <h1>Entre em contato comigo!</h1>
+    <h1 class="center">Entre em contato comigo!</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+    <div class="container mb-50">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email">
+        <div>
+            <form>
+                <label for="nome">Nome:</label> <br/>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br/>
+    
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+        
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+        
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
 
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="40" rows="5"></textarea>
+    <div class="ml-50">
+        <p>Lago do Taboão</p>
+        <p>Bragança Paulista - SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.45555521904!2d-46.54083781114504!3d-22.970269799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec9b871ff8933%3A0x5e993d86510bdc91!2sLago%20do%20Tabo%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1704826184998!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+    </div>
 
-        <button>Enviar</button>
-    </form>
+    <hr/>
 
-    <h2>Endereço:</h2>
-    <p>Lago do Taboão</p>
-    <p>Bragança Paulista - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.45555521904!2d-46.54083781114504!3d-22.970269799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec9b871ff8933%3A0x5e993d86510bdc91!2sLago%20do%20Tabo%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1704826184998!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+
+        <div class="container">
+            <a href="https://www.facebook.com/talia.moura.33" target="_blank">
+                <img class="tm-social p-30" src="assets/img/facebook.png" alt="Logo do Facebook">
+             </a>
+             
+             <a href="https://www.linkedin.com/in/talia-moura/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+             </a>
+             
+             <a href="https://www.instagram.com/taah_moura/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Intagram">
+             </a>
+        </div>
+
+        <p class="center">
+            Todos os direitos reservados: Talia Moura &copy
+        </p>
+
+    </footer>
+    <!-- JS Interno
+         JS Externo -->
+
+    <script src="assets/scripts/scripts.js"></script>
 
 </body>
 </html>
