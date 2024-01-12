@@ -3,6 +3,10 @@
     text-align: center;
  }
 
+ .justify {
+   text-align: center;
+ }
+
  .container {
     display: flex;
     flex-flow: row;
@@ -12,7 +16,7 @@
 
  #menu li {
     display: inline;
-    padding: 30px;
+    padding: 15px;
  }
 
  #menu li a {
@@ -22,7 +26,7 @@
  }
 
  #menu li a:hover {
-    color: grey;
+    color: rgb(176, 174, 174);
  }
 
  .p-30 {
@@ -38,9 +42,16 @@
     height: 300px;
  }
 
+ .tm-social {
+   width: 50px;
+   height: 50px;
+ }
 
-
-
-
+ .mb-50 {
+   margin-bottom: 50px;
+ }
 
 /* Estilos da página contato.html */
+.ml-50 {
+   margin-left: 50px;
+}
